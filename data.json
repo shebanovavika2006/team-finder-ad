@@ -1,0 +1,257 @@
+[
+{
+  "model": "sessions.session",
+  "pk": "1x4sj0rd72wrfjnj2k6q102ji8hyew75",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyG4sBU8eu83kGXZSNXQpLQn479Lkx70NMm8N_NWkba1xK3JEqesrgrU6bdLxE-pO8gPqvdZ81zXZUp6V_RBmx7nLK_b4f4dFGqlr6344AOTC47ZDj0om2Q9Jr4YFD6j8YQOJCS0QMF1DgAMODjrhdTnC9K9N0M:1wTkoy:LEo2CJX01SgF57-OGKgLisiQYdbNwTf8_mz-_ppa9cM",
+    "expire_date": "2026-06-14T18:23:36.245Z"
+  }
+},
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$hbst3pPjZRwD7o6MFU1BkN$fIPc2YlnA/e3SfbSJdj5fqQfGNU2kS90HYXM/PiaYRU=",
+    "last_login": "2026-05-31T18:19:39.771Z",
+    "is_superuser": true,
+    "username": "shebanovavika2006@gmail.com",
+    "first_name": "Vika",
+    "last_name": "Shebanova",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-31T18:16:45.879Z",
+    "email": "shebanovavika2006@gmail.com",
+    "phone": "89344567890",
+    "avatar": "",
+    "about": "",
+    "github_url": "",
+    "groups": [],
+    "user_permissions": [],
+    "favorites": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$3AELVd4PHFoOhJtPtwaHLG$E/X9nwH9AlatGMWti0wHx+rBLWZ8dhlR5lrB/wejF0I=",
+    "last_login": "2026-05-31T18:23:36.244Z",
+    "is_superuser": false,
+    "username": "vika@mail.ru",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-31T18:23:34.906Z",
+    "email": "vika@mail.ru",
+    "phone": "",
+    "avatar": "avatars/avatar_2_vikamail.ru.png",
+    "about": "",
+    "github_url": "",
+    "groups": [],
+    "user_permissions": [],
+    "favorites": [
+      9,
+      6,
+      5,
+      3
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 1,
+  "fields": {
+    "name": "123",
+    "description": "",
+    "github_url": "https://github.com/shebanovavika2006/team-finder-ad",
+    "status": "open",
+    "created_at": "2026-05-31T18:21:12.268Z",
+    "owner": 1,
+    "participants": [
+      1
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 2,
+  "fields": {
+    "name": "123",
+    "description": "",
+    "github_url": "",
+    "status": "open",
+    "created_at": "2026-05-31T18:21:18.615Z",
+    "owner": 1,
+    "participants": [
+      1
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 3,
+  "fields": {
+    "name": "123",
+    "description": "",
+    "github_url": "",
+    "status": "open",
+    "created_at": "2026-05-31T18:21:23.354Z",
+    "owner": 1,
+    "participants": [
+      1
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 4,
+  "fields": {
+    "name": "123",
+    "description": "",
+    "github_url": "",
+    "status": "open",
+    "created_at": "2026-05-31T18:21:48.328Z",
+    "owner": 1,
+    "participants": [
+      1
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 5,
+  "fields": {
+    "name": "123",
+    "description": "",
+    "github_url": "",
+    "status": "open",
+    "created_at": "2026-05-31T18:21:51.186Z",
+    "owner": 1,
+    "participants": [
+      1
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 6,
+  "fields": {
+    "name": "123",
+    "description": "",
+    "github_url": "",
+    "status": "open",
+    "created_at": "2026-05-31T18:21:54.635Z",
+    "owner": 1,
+    "participants": [
+      2,
+      1
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 7,
+  "fields": {
+    "name": "12345",
+    "description": "",
+    "github_url": "",
+    "status": "open",
+    "created_at": "2026-05-31T18:23:44.752Z",
+    "owner": 2,
+    "participants": [
+      2
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 8,
+  "fields": {
+    "name": "12345",
+    "description": "",
+    "github_url": "",
+    "status": "open",
+    "created_at": "2026-05-31T18:23:49.468Z",
+    "owner": 2,
+    "participants": [
+      2
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 9,
+  "fields": {
+    "name": "12345",
+    "description": "",
+    "github_url": "",
+    "status": "open",
+    "created_at": "2026-05-31T18:23:52.599Z",
+    "owner": 2,
+    "participants": [
+      2
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 10,
+  "fields": {
+    "name": "12345",
+    "description": "",
+    "github_url": "",
+    "status": "open",
+    "created_at": "2026-05-31T18:23:55.049Z",
+    "owner": 2,
+    "participants": [
+      2
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 11,
+  "fields": {
+    "name": "1234567",
+    "description": "",
+    "github_url": "",
+    "status": "open",
+    "created_at": "2026-05-31T18:23:58.227Z",
+    "owner": 2,
+    "participants": [
+      2
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 12,
+  "fields": {
+    "name": "8764",
+    "description": "",
+    "github_url": "",
+    "status": "open",
+    "created_at": "2026-05-31T18:24:01.006Z",
+    "owner": 2,
+    "participants": [
+      2
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 13,
+  "fields": {
+    "name": "41o34",
+    "description": "",
+    "github_url": "",
+    "status": "open",
+    "created_at": "2026-05-31T18:24:09.464Z",
+    "owner": 2,
+    "participants": [
+      2
+    ]
+  }
+}
+]
