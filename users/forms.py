@@ -14,7 +14,6 @@ def validate_github_url(url):
 
 
 class StyleMixin:
-    """Примесь для автоматического добавления классов Bootstrap ко всем полям."""
     def apply_styles(self):
         for field_name, field in self.fields.items():
             field.widget.attrs["class"] = "form-control"
@@ -26,7 +25,7 @@ class LoginForm(forms.Form, StyleMixin):
 
     def __init__(self, *args, **kwargs):
         kwargs.pop("request", None)
-        
+
         super().__init__(*args, **kwargs)
         self.apply_styles()
         self.fields["email"].widget.attrs["placeholder"] = "email@example.com"

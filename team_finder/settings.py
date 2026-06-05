@@ -14,21 +14,16 @@ DEBUG = os.getenv("DJANGO_DEBUG", "False").lower() in ("true", "1", "t")
 _raw_hosts = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost")
 ALLOWED_HOSTS = [host.strip() for host in _raw_hosts.split(",") if host.strip()]
 
-DJANGO_CORE_APPS = [
+INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-]
-
-CUSTOM_PROJECT_APPS = [
     "users.apps.UsersConfig",
     "projects.apps.ProjectsConfig",
 ]
-
-INSTALLED_APPS = DJANGO_CORE_APPS + CUSTOM_PROJECT_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

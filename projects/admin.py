@@ -9,5 +9,5 @@ class ProjectAdmin(admin.ModelAdmin):
     list_filter = ("status", "created_at")
     search_fields = ("name", "description", "owner__email")
     raw_id_fields = ("owner",)
-    date_hierarchy = "created_at"  # Добавлен удобный фильтр по датам
-    empty_value_display = "-пусто-" # Обработка пустых полей
+    date_hierarchy = "created_at"
+    empty_value_display = "-пусто-"

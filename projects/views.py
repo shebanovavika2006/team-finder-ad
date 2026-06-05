@@ -85,14 +85,14 @@ class ToggleFavoriteView(LoginRequiredMixin, View):
     def post(self, request, *args, **kwargs):
         project = get_object_or_404(Project, pk=self.kwargs.get("pk"))
         favorites = request.user.favorites
-        
+
         if favorites.filter(pk=project.pk).exists():
             favorites.remove(project)
             is_favorited = False
         else:
             favorites.add(project)
             is_favorited = True
-            
+
         return JsonResponse({"status": "ok", "favorited": is_favorited})
 
 
@@ -101,10 +101,10 @@ class ToggleParticipateView(LoginRequiredMixin, View):
 
     def post(self, request, *args, **kwargs):
         project = get_object_or_404(Project, pk=self.kwargs.get("pk"))
-        
+
         if project.owner == request.user:
             return JsonResponse({"error": "Доступ запрещен"}, status=HTTPStatus.FORBIDDEN)
-            
+
         if project.status != StatusChoices.OPEN:
             return JsonResponse({"error": "Проект закрыт"}, status=HTTPStatus.BAD_REQUEST)
 
@@ -115,7 +115,7 @@ class ToggleParticipateView(LoginRequiredMixin, View):
         else:
             participants.add(request.user)
             is_participant = True
-            
+
         return JsonResponse({"status": "ok", "participant": is_participant})
 
 
@@ -124,12 +124,13 @@ class CompleteProjectView(LoginRequiredMixin, View):
 
     def post(self, request, *args, **kwargs):
         project = get_object_or_404(Project, pk=self.kwargs.get("pk"))
-        
+
         if project.owner != request.user:
             return JsonResponse({"error": "Доступ запрещен"}, status=HTTPStatus.FORBIDDEN)
 
         project.status = StatusChoices.CLOSED
         project.save(update_fields=["status"])
-        
-        # Исправлено согласно ТЗ
-        return JsonResponse({"status": "ok", "project_status": "closed"})
+
+        return JsonResponse(
+            {"status": "ok", "project_status": StatusChoices.CLOSED.value}
+        )
